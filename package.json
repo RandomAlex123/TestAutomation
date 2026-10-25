@@ -1,0 +1,12 @@
+{
+  "name": "volga-it-ui-test-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Allure HTML report generator for the Python UI test suite",
+  "scripts": {
+    "report": "python3 tools/build_report.py"
+  },
+  "devDependencies": {
+    "allure": "3.22.1"
+  }
+}

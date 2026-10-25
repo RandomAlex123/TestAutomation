@@ -1,0 +1,15 @@
+[project]
+name = "volga-it-ui-tests"
+version = "1.0.0"
+description = "Selenium UI checks for practice-automation.com"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers --alluredir=artifacts/allure-results --clean-alluredir"
+markers = [
+  "positive: supported user flow",
+  "negative: validation or protection against an unwanted action",
+]
+
